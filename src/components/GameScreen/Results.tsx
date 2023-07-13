@@ -23,11 +23,11 @@ const Results = ({ difficulty, score, guesses, setShowGame }: IResultsProps) => 
     if (score === 0 || guesses === 0) {
       return '0%'
     }
-    let perc = ((score / guesses) * 100).toFixed(2)
+    let perc = ((score / guesses) * 100).toFixed(1)
     return `${perc}%`
   }
   return (
-    <div className='flex flex-col w-1/2 m-auto mt-10 items-center justify-center'>
+    <div className='flex flex-col lg:w-1/3 w-1/2 m-auto mt-10 items-center justify-center border-black border'>
       <h4 className='text-4xl font-semibold m-5 underline'>Results</h4>
       <div>
         <div className='m-5'>
