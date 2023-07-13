@@ -44,7 +44,7 @@ const Results = ({ difficulty, score, guesses, setShowGame }: IResultsProps) => 
         </div>
       </div>
       <div>
-        <button className='font-bold py-2 px-4 border border-black rounded shadow my-5' onClick={() => setShowGame(false)}>Play Again</button>
+        <button className='font-bold py-2 px-4 border border-black rounded shadow my-5 hover:bg-gray-200' onClick={() => setShowGame(false)}>Play Again</button>
       </div>
     </div>
   )
