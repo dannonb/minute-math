@@ -8,7 +8,7 @@ interface IAnswersProps {
 
 const Answers = ({ choices, handleSelectAnswer }: IAnswersProps) => {
   return (
-    <div className='grid grid-cols-2 lg:w-1/3 w-full lg:border border-b border-gray-300 lg:rounded shadow-lg'>
+    <div className='grid grid-cols-2 lg:w-1/3 w-full'>
         {choices.map((choice, index) => (
             <AnswerTile key={index} choice={choice} handleOnClick={handleSelectAnswer} />
         ))}

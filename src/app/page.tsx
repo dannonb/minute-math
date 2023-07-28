@@ -13,11 +13,11 @@ const HomePage = () => {
   return (
     <section>
       {showGame ? 
-        <div className='lg:mt-20 mt-10'>
+        <div className='lg:pt-20 pt-10'>
           <Game difficulty={selectedDifficulty} setIsPlaying={setIsPlaying} setShowGame={setShowGame} isPlaying={isPlaying} />
         </div>
         :
-        <div className='lg:mt-60 mt-20'>
+        <div className='lg:pt-60 pt-20'>
           <Settings setDifficulty={setSelectedDifficulty} setShowGame={setShowGame} />
         </div>
       }

@@ -100,8 +100,8 @@ const Game = ({ difficulty, setIsPlaying, isPlaying, setShowGame }: IGameProps) 
                 <p className='text-5xl text-center font-bold'>{message}</p>
             ) : (
                 <div className='flex flex-col items-center justify-center'>
-                    <DisplayTime time={currentTime} />
                     <Stats score={score} guesses={totalGuesses} />
+                    <DisplayTime time={currentTime} />
                     <Question expression={currentQuestion} />
                     <Answers choices={currentChoices} handleSelectAnswer={handleGuess} />
                 </div>
