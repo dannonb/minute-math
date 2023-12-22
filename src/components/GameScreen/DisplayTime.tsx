@@ -68,7 +68,7 @@ const DisplayTime = ({ time }: IDisplayTimeProps) => {
 
     return (
         <div className={`relative h-24 w-24 flex mb-5 justify-center items-center text-gray-400 ${time <= 10 && 'animate-pulse'}`}>
-            <svg className="-scale-x-100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <svg className="-scale-x-100 w-[96px]" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <g className="fill-none stroke-none">
                     <circle className="stroke-[7px] stroke-gray-400" cx="50" cy="50" r="45" />
                     <path

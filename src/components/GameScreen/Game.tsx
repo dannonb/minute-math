@@ -65,16 +65,16 @@ const Game = ({ difficulty, setIsPlaying, isPlaying, setShowGame }: IGameProps) 
 
     const handleOnEnd = () => {
         setIsPlaying(false)
-        setMessage('Time is Up!')
+        setMessage('Time is up!')
         setShowResults(true)
     }
 
     const ready = () => {
-        setMessage('Ready...')
+        setMessage('Ready')
         setTimeout(() => {
-            setMessage('Set...')
+            setMessage('Set')
             setTimeout(() => {
-                setMessage('GO!')
+                setMessage('Go!')
                 setTimeout(() => {
                     setMessage('')
                     startTimer()
