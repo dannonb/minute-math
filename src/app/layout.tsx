@@ -1,13 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Overpass } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 
-import bg from '../assets/math-bg.png'
-
-const inter = Overpass({ subsets: ['latin'] })
+const inter = Roboto({ weight: ["400", "500", "700"], subsets: ['latin'] })
 
 import Header from '@/components/Header/Header'
-import Footer from '@/components/Footer/Footer'
 
 export const metadata: Metadata = {
   title: 'Minute Math',
@@ -21,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[url("/math-bg.png")] bg-no-repeat bg-cover h-screen`}>
+      <body className={`${inter.className} bg-[url("/bg.png")] bg-no-repeat bg-cover bg-center h-screen`}>
         <Header />
         <main className='contianer'>{children}</main>
       </body>

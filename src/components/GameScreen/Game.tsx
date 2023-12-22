@@ -97,7 +97,7 @@ const Game = ({ difficulty, setIsPlaying, isPlaying, setShowGame }: IGameProps) 
     return (
         <div>
             {message ? (
-                <p className='text-5xl text-center font-bold'>{message}</p>
+                <p className='text-5xl text-center font-bold text-gray-400'>{message}</p>
             ) : (
                 <div className='flex flex-col items-center justify-center'>
                     <Stats score={score} guesses={totalGuesses} />

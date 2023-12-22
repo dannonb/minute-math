@@ -27,7 +27,7 @@ const Results = ({ difficulty, score, guesses, setShowGame }: IResultsProps) => 
     return `${perc}%`
   }
   return (
-    <div className='flex flex-col lg:w-1/3 w-1/2 m-auto mt-10 items-center justify-center border-black border-2 rounded bg-white'>
+    <div className='flex flex-col lg:w-1/3 w-full m-auto mt-10 items-center justify-center rounded bg-zinc-900 bg-opacity-90 lg:border-2 border-gray-400 text-gray-400'>
       <h4 className='text-4xl font-semibold m-5 underline'>Results</h4>
       <div>
         <div className='m-5'>
@@ -44,7 +44,7 @@ const Results = ({ difficulty, score, guesses, setShowGame }: IResultsProps) => 
         </div>
       </div>
       <div>
-        <button className='font-bold py-2 px-4 border-2 border-black rounded shadow my-5 hover:bg-gray-200' onClick={() => setShowGame(false)}>Play Again</button>
+        <button className='font-bold py-2 px-4 bg-zinc-900 text-gray-400 hover:bg-gray-400 hover:text-gray-900 text-2xl rounded-full my-5 border-2 border-gray-400' onClick={() => setShowGame(false)}>Play Again</button>
       </div>
     </div>
   )

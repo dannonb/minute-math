@@ -10,8 +10,8 @@ import Link from 'next/link'
 
 const Header = () => {
     return (
-        <header className='header border-b border-black'>
-            <div className='flex items-center justify-between mx-5 pt-5 text-center'>
+        <header className='header border-b-2 border-gray-400 bg-zinc-900 bg-opacity-90 text-gray-400'>
+            <div className='flex items-center justify-between mx-5 p-3 text-center'>
                 <div className='w-1/3'>
                     <h1 className='text-xl md:text-4xl font-bold'>Minute Math</h1>
                 </div>
